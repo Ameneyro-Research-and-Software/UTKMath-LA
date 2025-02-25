@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{UTKMathLA}[2025/02/21 This class provides style and format to create learning activities for the math 123 course and possibly others.]
 
+\PassOptionsToClass{fleqn,twoside}{article}
 \LoadClass[fleqn,twoside]{article}
 
 %-------------- Load Packages -----------------------
@@ -26,6 +27,7 @@
   textheight = 9.2in
 }
 
+\makeatletter
 \fancypagestyle{la-page-style}{
   \fancyhead[L]{{\GetCourse \ \GetAsignmentType}}
   \fancyhead[C]{{\@author}}
@@ -47,12 +49,13 @@
     \vspace{0.25in}
     \textsc{Name:} \underline{\hspace{2.5in}}
     \hfil
-    \textsc{Net ID:} \underline{\hspace{1.5in}}@vols.utk.edu \\
+    \textsc{Net ID:} \underline{\hspace{2.5in}} \\
     \noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} \\
     \vspace{0.1in}
     \textbf{Directions:} \GetDirections \\
     \noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}}
   \end{center}
 }
+\makeatother
 
 \pagestyle{la-page-style}
