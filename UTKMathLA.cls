@@ -9,8 +9,10 @@
 
 %--------------- Course Information ------------------
 \newcommand{\GetCourse}{Math 123}
+\newcommand{\GetAsignmentType}{Learning Activity}
 \newcommand{\GetDirections}{Write directions with \texttt{\textbackslash SetDirections\{\}} command}
 \newcommand{\SetCourse}[1]{\renewcommand{\GetCourse}{#1}}
+\newcommand{\SetAsignmentType}[1]{\renewcommand{\GetAsignmentType}{#1}}
 \newcommand{\SetDirections}[1]{\renewcommand{\GetDirections}{#1}}
 
 %--------------- Headers and Page Style ------------------
@@ -25,9 +27,9 @@
 }
 
 \fancypagestyle{la-page-style}{
-  \fancyhead[L]{{\GetCourse \ Learning Activity}}
+  \fancyhead[L]{{\GetCourse \ \GetAsignmentType}}
   \fancyhead[C]{{\@author}}
-  \fancyhead[R]{{LA \@title}}
+  \fancyhead[R]{{\@title}}
 }
 
 \fancypagestyle{title-page-style}{
@@ -40,7 +42,7 @@
 \newcommand{\MakeTitle}{
   \thispagestyle{title-page-style}
   \begin{center}
-    {\Large LA \@title}
+    {\Large \@title}
     \noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} \\
     \vspace{0.25in}
     \textsc{Name:} \underline{\hspace{2.5in}}
