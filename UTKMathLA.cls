@@ -1,8 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{UTKMathLA}[2025/02/21 This class provides style and format to create learning activities for the math 123 course and possibly others.]
 
-\PassOptionsToClass{fleqn,twoside}{article}
-\LoadClass[fleqn,twoside]{article}
+\PassOptionsToClass{fleqn,twoside,12pt}{article}
+\LoadClass[fleqn,twoside,12pt]{article}
 
 %-------------- Load Packages -----------------------
 \RequirePackage{geometry}
