@@ -21,10 +21,10 @@
   letterpaper,
   inner = 0.75in,
   outer = 0.5in,
-  top = 1.0in,
+  top = 0.85in,
+  bottom = 0.75in,
   marginparwidth = 0.75in,
-  textwidth = 7.25in,
-  textheight = 9.2in
+  headheight = 15pt
 }
 
 \makeatletter
